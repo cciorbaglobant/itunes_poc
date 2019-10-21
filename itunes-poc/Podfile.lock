@@ -1,16 +1,28 @@
 PODS:
   - Alamofire (4.9.0)
+  - Bond (7.6.0):
+    - Differ (~> 1.3)
+    - ReactiveKit (~> 3.10)
+  - Differ (1.4.3)
+  - ReactiveKit (3.14.0)
 
 DEPENDENCIES:
   - Alamofire
+  - Bond
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Bond
+    - Differ
+    - ReactiveKit
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  Bond: 5d626bfbbfc60b213ec35badb8f4fd81beff6a5f
+  Differ: 6c7477d6187e8c36d02ec342a3c321061b85a0ea
+  ReactiveKit: bee31957333d98c5b443609fe099ebccdf055d15
 
-PODFILE CHECKSUM: 89713b27acc0ee8e9bf7d20d913ccf9b88e63011
+PODFILE CHECKSUM: 4b7e4e60f7e5759d9692e96000e8e5c30e7cf4cf
 
 COCOAPODS: 1.8.3
