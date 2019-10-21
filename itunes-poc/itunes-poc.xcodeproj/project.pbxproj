@@ -23,6 +23,7 @@
 		572CB184235DC1D30018E820 /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572CB181235DC1D30018E820 /* SearchResultsTableViewController.swift */; };
 		572CB185235DC1D30018E820 /* SearchResultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572CB182235DC1D30018E820 /* SearchResultsRepository.swift */; };
 		572CB186235DC1D30018E820 /* SearchResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572CB183235DC1D30018E820 /* SearchResultsViewModel.swift */; };
+		5754BCFC235DD33100EADAD0 /* ViewControllerDisplayAlertProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5754BCFB235DD33100EADAD0 /* ViewControllerDisplayAlertProtocol.swift */; };
 		57829D36235DC348003741AF /* SearchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57829D35235DC348003741AF /* SearchResultsTableViewCell.swift */; };
 		57829D39235DC4B5003741AF /* UIViewModelBindableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57829D38235DC4B5003741AF /* UIViewModelBindableProtocol.swift */; };
 		6726DBCB65AC29F19BFC0017 /* Pods_itunes_poc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98938B2EC5B6145C011788A7 /* Pods_itunes_poc.framework */; };
@@ -70,6 +71,7 @@
 		572CB181235DC1D30018E820 /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
 		572CB182235DC1D30018E820 /* SearchResultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsRepository.swift; sourceTree = "<group>"; };
 		572CB183235DC1D30018E820 /* SearchResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewModel.swift; sourceTree = "<group>"; };
+		5754BCFB235DD33100EADAD0 /* ViewControllerDisplayAlertProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDisplayAlertProtocol.swift; sourceTree = "<group>"; };
 		57829D35235DC348003741AF /* SearchResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewCell.swift; sourceTree = "<group>"; };
 		57829D38235DC4B5003741AF /* UIViewModelBindableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewModelBindableProtocol.swift; sourceTree = "<group>"; };
 		83B3617477D75BBB76255E4C /* Pods-itunes-poc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-itunes-poc.debug.xcconfig"; path = "Target Support Files/Pods-itunes-poc/Pods-itunes-poc.debug.xcconfig"; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				57829D38235DC4B5003741AF /* UIViewModelBindableProtocol.swift */,
+				5754BCFB235DD33100EADAD0 /* ViewControllerDisplayAlertProtocol.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				57829D39235DC4B5003741AF /* UIViewModelBindableProtocol.swift in Sources */,
 				572CB178235DB35C0018E820 /* SearchRepository.swift in Sources */,
 				572CB184235DC1D30018E820 /* SearchResultsTableViewController.swift in Sources */,
+				5754BCFC235DD33100EADAD0 /* ViewControllerDisplayAlertProtocol.swift in Sources */,
 				572CB177235DB35C0018E820 /* SearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

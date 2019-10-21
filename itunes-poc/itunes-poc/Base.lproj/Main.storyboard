@@ -32,16 +32,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNW-53-awd">
-                                <rect key="frame" x="183" y="460" width="48" height="30"/>
+                                <rect key="frame" x="167" y="452.5" width="80" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="9tz-B1-jwk"/>
+                                    <constraint firstAttribute="width" constant="80" id="ARn-8b-OGe"/>
+                                </constraints>
                                 <state key="normal" title="Search"/>
                                 <connections>
                                     <action selector="searchButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DHH-Eg-RIM"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="jack johnson" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FlK-LR-MKT">
-                                <rect key="frame" x="107" y="418" width="200" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your text here" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FlK-LR-MKT">
+                                <rect key="frame" x="120" y="386.5" width="174" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="pPP-cC-Njd"/>
+                                    <constraint firstAttribute="height" constant="50" id="6Kl-kA-wbY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -50,9 +54,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="FlK-LR-MKT" firstAttribute="centerX" secondItem="WNW-53-awd" secondAttribute="centerX" id="87Z-66-tvi"/>
+                            <constraint firstItem="FlK-LR-MKT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="ChY-pT-Uy0"/>
                             <constraint firstItem="WNW-53-awd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="TH8-QC-Ux3"/>
                             <constraint firstItem="WNW-53-awd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="X8B-io-owF"/>
-                            <constraint firstItem="WNW-53-awd" firstAttribute="top" secondItem="FlK-LR-MKT" secondAttribute="bottom" constant="8" id="mF2-Ue-ZLC"/>
+                            <constraint firstItem="WNW-53-awd" firstAttribute="top" secondItem="FlK-LR-MKT" secondAttribute="bottom" constant="16" id="mF2-Ue-ZLC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FlK-LR-MKT" secondAttribute="trailing" constant="120" id="pUz-gM-03b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

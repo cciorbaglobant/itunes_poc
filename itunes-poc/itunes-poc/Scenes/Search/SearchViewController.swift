@@ -12,7 +12,7 @@ import UIKit
 
 // MARK: - SearchViewController
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, ViewControllerDisplayAlertProtocol {
     
     // MARK: - Properties
     @IBOutlet weak var searchTextField: UITextField!
@@ -80,16 +80,21 @@ class SearchViewController: UIViewController {
     // MARK: - Private methods
     
     private func setupBindings() {
-        viewModel.navigationCommands.observeNext { (value) in
+        viewModel.navigationCommands.observeNext { [weak self](value) in
             switch value {
             case .goToResults(let results):
                 let segueIdentifier = SegueNames.displaySearchResults.rawValue
-                self.performSegue(withIdentifier: segueIdentifier, sender: results)
+                self?.performSegue(withIdentifier: segueIdentifier, sender: results)
                 break
             
             case .none:
                 break
             }
+        }.dispose(in: self.bag)
+        
+        viewModel.searchErrorMessage.observeNext { [weak self] (value) in
+            guard let v = value else { return }
+            self?.displayOKErrorAlert(message: v)
         }.dispose(in: self.bag)
     }
 
