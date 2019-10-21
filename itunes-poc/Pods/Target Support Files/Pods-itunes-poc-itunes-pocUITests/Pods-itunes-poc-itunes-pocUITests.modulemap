@@ -1,0 +1,6 @@
+framework module Pods_itunes_poc_itunes_pocUITests {
+  umbrella header "Pods-itunes-poc-itunes-pocUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
