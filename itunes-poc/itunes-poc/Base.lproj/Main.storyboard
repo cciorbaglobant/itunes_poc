@@ -42,8 +42,8 @@
                                     <action selector="searchButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DHH-Eg-RIM"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your text here" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FlK-LR-MKT">
-                                <rect key="frame" x="120" y="386.5" width="174" height="50"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your text here" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FlK-LR-MKT">
+                                <rect key="frame" x="129.5" y="386.5" width="155.5" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="6Kl-kA-wbY"/>
                                 </constraints>
@@ -54,11 +54,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="FlK-LR-MKT" firstAttribute="centerX" secondItem="WNW-53-awd" secondAttribute="centerX" id="87Z-66-tvi"/>
-                            <constraint firstItem="FlK-LR-MKT" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="ChY-pT-Uy0"/>
+                            <constraint firstItem="FlK-LR-MKT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ChY-pT-Uy0"/>
                             <constraint firstItem="WNW-53-awd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="TH8-QC-Ux3"/>
                             <constraint firstItem="WNW-53-awd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="X8B-io-owF"/>
                             <constraint firstItem="WNW-53-awd" firstAttribute="top" secondItem="FlK-LR-MKT" secondAttribute="bottom" constant="16" id="mF2-Ue-ZLC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="FlK-LR-MKT" secondAttribute="trailing" constant="120" id="pUz-gM-03b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FlK-LR-MKT" secondAttribute="trailing" constant="20" id="pUz-gM-03b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
