@@ -54,11 +54,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="FlK-LR-MKT" firstAttribute="centerX" secondItem="WNW-53-awd" secondAttribute="centerX" id="87Z-66-tvi"/>
-                            <constraint firstItem="FlK-LR-MKT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="ChY-pT-Uy0"/>
+                            <constraint firstItem="FlK-LR-MKT" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="ChY-pT-Uy0"/>
                             <constraint firstItem="WNW-53-awd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="TH8-QC-Ux3"/>
                             <constraint firstItem="WNW-53-awd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="X8B-io-owF"/>
                             <constraint firstItem="WNW-53-awd" firstAttribute="top" secondItem="FlK-LR-MKT" secondAttribute="bottom" constant="16" id="mF2-Ue-ZLC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FlK-LR-MKT" secondAttribute="trailing" constant="120" id="pUz-gM-03b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="FlK-LR-MKT" secondAttribute="trailing" constant="120" id="pUz-gM-03b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
