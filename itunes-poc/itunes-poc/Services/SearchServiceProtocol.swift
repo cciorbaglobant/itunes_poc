@@ -26,11 +26,16 @@ protocol SearchServiceProtocol {
 
 extension SearchServiceProtocol {
     func searchFor(searchTerm:String, completion: @escaping(_ success:Bool, _ message:String?, _ data: SearchReponseData?) -> Void) -> Void {
+        
+        /*
+         Documentation: https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/
+         */
         let endpoint = "https://itunes.apple.com/search?"
         
         let terms = searchTerm.replacingOccurrences(of: " ", with: "+")
         
-        let params:Parameters = ["term":terms, "limit":"25"]
+        let params:Parameters = ["term":terms,
+                                 "limit":"25"]
         
         Alamofire.request(endpoint,
                           method: .get,
