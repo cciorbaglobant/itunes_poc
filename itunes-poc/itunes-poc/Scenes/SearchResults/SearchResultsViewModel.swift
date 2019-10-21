@@ -41,6 +41,7 @@ class SearchResultsViewModel: SearchResultsViewModelProtocol {
             model.leftImageURL.value = result.artworkUrl60
             model.title.value = result.artistName
             model.subtitle.value = result.trackName
+            model.previewUrl = result.previewUrl
             return model
         })
     }

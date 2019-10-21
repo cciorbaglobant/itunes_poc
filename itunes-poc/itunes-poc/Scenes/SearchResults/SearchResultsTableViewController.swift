@@ -9,6 +9,7 @@
 // MARK: - Imports
 
 import UIKit
+import AVKit
 
 // MARK: - SearchResultsTableViewController
 
@@ -52,7 +53,13 @@ class SearchResultsTableViewController: UITableViewController {
         }
         
         switch s {
-        default:
+        case .displayPlayer:
+            guard let destVC = segue.destination as? AVPlayerViewController else { return }
+            let m = sender as? SearchResultsTableViewCellModel
+            
+            let player = AVPlayer(url: m!.previewUrl!)
+            destVC.player = player
+            destVC.player?.play()
             break
         }
     }
@@ -92,9 +99,10 @@ extension SearchResultsTableViewController {
     // Delegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let model = viewModel.resultModels.value![indexPath.row]
+        
+        self.performSegue(withIdentifier: SegueNames.displayPlayer.rawValue, sender: model)
+        
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
-
-
-
